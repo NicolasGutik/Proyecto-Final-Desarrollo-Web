@@ -1,14 +1,10 @@
-
 body {
   background-image: url(../Img/fondo.jpg);
   font-family: Arial, Helvetica, sans-serif; }
 
 #grilla {
   display: grid;
-  grid-template-areas: "header header header"
- "categorias tendencias tendencias"
- "categorias parati parati"
- "footer footer footer";
+  grid-template-areas: "header header header" "categorias tendencias tendencias" "categorias parati parati" "footer footer footer";
   grid-template-columns: 2fr 2fr 2fr;
   grid-template-rows: 2fr 2fr 2fr; }
 
@@ -18,26 +14,19 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
-}
+  background-color: black; }
 
 .ten {
   grid-area: tendencias;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
+  background-color: grey;
   display: flex;
   flex-flow: column; }
 
 .ti {
   grid-area: parati;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
+  background-color: grey;
   display: flex;
   flex-flow: column; }
 
@@ -47,9 +36,7 @@ footer {
 .categorias {
   display: flex;
   flex-flow: column;
-  background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
+  background-image: linear-gradient(gray, black);
   justify-content: center;
   grid-area: categorias; }
   .categorias .Cat {
@@ -132,149 +119,3 @@ header {
 
 #Perfil {
   padding: 50px; }
-
-.reseñas{
-  height:70px;
-  width:800px;
-  border: solid 2px;
-  padding: 10px;
-  margin: 10px;
-  border-radius: 30px;
-  background-color: white;
-}
-
-.reseñas ul{
-  display: flex;
-  list-style: none;
-  margin: auto;
-  padding: auto;
-}
-
-.reseñas ul li{
-  margin: 20px;
-}
-
-#grupoReseñas{
-
-}
-
-.footer{
-  display: flex;
-  flex-flow: row;
-}
-
-.footer li{
-  display: flex;
-  flex-flow:column;
-}
-
-.ftr{
-  display: flex;
-  flex-flow: column;
-  margin: 20px;
-  font-size: large;
-  width: 500px;
-}
-
-.cr{
-  display: flex;
-  margin: 20px;
-  padding-top: 100px;
-  font-size: large;
-  padding-left: 200px;
-}
-
-.Redes{
-  display: flex;
-  flex-flow: column;
-  margin: 20px;
-  padding-left: 600px;
-}
-
-.buscador input{
-  border-radius: 10px;
-  width: 500px;
-  height: 40px;
-	color: inherit;
-	border: none;
-	cursor: pointer;
-	outline: inherit;
-}
-
-.buscador button{
-  height: 40px;
-  width: 40px;
-	background: none;
-	color: inherit;
-	border: none;
-	cursor: pointer;
-	outline: inherit;
-}
-
-.footer{
-  padding-top: 100px;
-  background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
-}
-
-.cajaForm{
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  margin-top: 100px;
-  cursor: pointer;
-}
-
-
-.formulariodos{
-  width: 400px;
-  height: 650px;
-  background: rgba(0, 0, 0, 0.6);
-  border-radius: 30px;
-  -webkit-backdrop-filter: blur(2px);
-backdrop-filter: blur(2px);    
-}
-
-.formu{
-  padding: 20px;
-  margin: 20px;
-}
-
-label{
-  color: white;
-}
-
-.reg{
-  padding-top: 10px;
-}
-
-.fpssw{
-  padding-top: 5px;
-}
-
-
-/* REGISTRO */
-.register{
-  margin-top:10px;
-}
-
-.mb-3{
-  padding-top: 10px;
-}
-
-.tituloForm{
-
-}
-
-.textoCuenta{
-  color: white;
-  margin-right: 15px;
-}
-
-#emailHelp{
-  display: flex;
-  flex-flow: row;
-  
-}
