@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="En la seccion de Me Gusta se encontraran las reseñas las cuales el usuario indico que le gustan">
     <meta name="keywords" contet="RevU, RESEÑAS, MEGUSTA, LIKE, SELECCION ">
-    <title>RevU⭐ - Me Gusta</title>>
-    <link rel="stylesheet" href="/Css/grids.css">
+    <title>RevU⭐ - Me Gusta</title>
+    <link rel="stylesheet" href="../Css/grids.css">
     <script src="https://kit.fontawesome.com/0899eed26f.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
 </head>
 <body>
     <header>
         <nav id="nav">
             <div class="logo">
-                <img src="/Img/logo.png">
+                <img src="../Img/logo.png">
                 <a class="revu" href="index.html"><h1>RevU</h1></a>
             </div>
             <div class="buscador">
@@ -30,44 +31,55 @@
             </div>    
         </nav>
 </header>
-    <h2>Peliculas y series</h2>
+    <h2 class="catTitulo">Peliculas y series</h2>
 
-    <div id="grupoReseñas">
-        <div class="reseñas">
-            <ul>
-                <li>Macarena Miro</li>
-                <li>Peliculas</li>
-                <li>Venom</li>
-                <li>⭐⭐⭐⭐⭐</li>
-            </ul>
-        </div>
-        <div class="reseñas">
-            <ul>
-                <li>Santiago Montero</li>
-                <li>Series</li>
-                <li>Juego del calamar</li>
-                <li>⭐⭐⭐⭐</li>
-            </ul>
-        </div>
-        <div class="reseñas">
-            <ul>
-                <li>Francisco Teruel</li>
-                <li>Series</li>
-                <li>La casa de papel</li>
-                <li>⭐⭐⭐</li>
-            </ul>
-        </div>
-        <div class="reseñas">
-            <ul>
-                <li>Maria de La Fuente</li>
-                <li>Peliculas</li>
-                <li>Titanic</li>
-                <li>⭐⭐⭐⭐⭐</li>
-            </ul>
-        </div>
-    </div>
+    <div class="container">
     
-    <hr>
+        <div class="card">
+            <img src="../Img/venom.jpg">
+            <h4>Macarena Miro</h4>
+            <h4>Peliculas</h4>
+            <p>Venom</p>
+            <p>⭐⭐⭐⭐⭐</p>
+            
+            <a href="mis-reseñas.html">Leer más</a>
+        </div>
+
+        
+        <div class="card">
+            <img src="../Img/jdc.webp">
+            <h4>Santiago Montero</h4>
+            <h4>Series</h4>
+            <p>Juego del calamar</p>
+            <p>⭐⭐⭐⭐</p>
+            
+            <a href="mis-reseñas.html">Leer más</a>
+        </div>
+
+
+        <div class="card">
+            <img src="../Img/lcdp.webp">
+            <h4>Francisco Teruel</h4>
+            <h4>Series</h4>
+            <p>La casa de papel</p>
+            <p>⭐⭐⭐</p>
+            
+            <a href="mis-reseñas.html">Leer más</a>
+        </div>
+
+        <div class="card">
+            <img src="../Img/titanic.jpg">
+            <h4>Maria de La Fuente</h4>
+            <h4>Peliculas</h4>
+            <p>Titanic</p>
+            <p>⭐⭐⭐⭐⭐</p>
+            
+            <a href="mis-reseñas.html">Leer más</a>
+        </div>
+        
+    </div>
+
+
     <footer class="footer">
         <div class="ftr">
             <p class="fuente">RevU⭐ es una pagina de reseñas donde todos los usuarios pueden compartir sus experiencias sobre distintos objetos, actividades, etc.</p>

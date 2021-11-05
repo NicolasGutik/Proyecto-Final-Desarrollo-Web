@@ -1,16 +1,10 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+* {
+  font-family: 'Comfortaa'; }
 
 body {
-  background-image: url(../Img/fondo.jpg);
-  font-family: Arial, Helvetica, sans-serif; }
-
-#grilla {
-  display: grid;
-  grid-template-areas: "header header header"
- "categorias tendencias tendencias"
- "categorias parati parati"
- "footer footer footer";
-  grid-template-columns: 2fr 2fr 2fr;
-  grid-template-rows: 2fr 2fr 2fr; }
+  background-image: url(../Img/fondo.jpg); }
 
 #nav {
   display: flex;
@@ -18,31 +12,32 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
-}
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  position: fixed;
+  z-index: 1; }
 
 .ten {
-  grid-area: tendencias;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   display: flex;
-  flex-flow: column; }
+  flex-flow: column;
+  border-radius: 20px;
+  padding-top: 20px; }
 
 .ti {
-  grid-area: parati;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   display: flex;
-  flex-flow: column; }
-
-footer {
-  grid-area: footer; }
+  flex-flow: column;
+  border-radius: 20px;
+  padding-top: 20px;
+  margin-top: 20px; }
 
 .categorias {
   display: flex;
@@ -50,41 +45,49 @@ footer {
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
-  justify-content: center;
-  grid-area: categorias; }
-  .categorias .Cat {
-    display: flex;
-    flex-flow: column; }
-    .categorias .Cat li {
-      color: white;
-      list-style: none;
-      text-decoration: none;
-      font-size: x-large; }
-      .categorias .Cat li a {
-        color: white;
-        list-style: none;
-        text-decoration: none; }
+  border-radius: 10px;
+  width: 400px;
+  height: 370px;
+  margin-left: 20px;
+  margin-top: 200px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 200px; }
+
+.categorias .Cat {
+  display: flex;
+  flex-flow: column; }
+
+.categorias .Cat li {
+  color: white;
+  list-style: none;
+  text-decoration: none;
+  font-size: x-large; }
+
+.categorias .Cat li a {
+  color: white;
+  list-style: none;
+  text-decoration: none; }
 
 .logo {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center; }
-  .logo img {
-    width: 100px;
-    height: auto; }
-  .logo a {
-    text-decoration: none;
-    color: white; }
+
+.logo img {
+  width: 100px;
+  height: auto; }
+
+.logo a {
+  text-decoration: none;
+  color: white; }
 
 .estrella {
   transition: 50s; }
 
 .estrella:hover {
   transform: rotate(10000deg); }
-
-header {
-  grid-area: header; }
 
 .enlaces ul li a:after {
   content: "";
@@ -102,18 +105,19 @@ header {
 .enlaces ul {
   list-style: none;
   float: right; }
-  .enlaces ul li {
-    display: inline-block; }
-    .enlaces ul li a {
-      color: white;
-      text-decoration: none;
-      padding: 10px;
-      position: relative;
-      text-decoration: none;
-      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-      font-size: 18px;
-      letter-spacing: 0.5px;
-      padding: 5px; }
+
+.enlaces ul li {
+  display: inline-block; }
+
+.enlaces ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  position: relative;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding: 5px; }
 
 .titulos {
   display: flex;
@@ -133,148 +137,180 @@ header {
 #Perfil {
   padding: 50px; }
 
-.reseñas{
-  height:70px;
-  width:800px;
+.reseñas {
+  height: 70px;
+  width: 800px;
   border: solid 2px;
   padding: 10px;
   margin: 10px;
   border-radius: 30px;
-  background-color: white;
-}
+  background-color: white; }
 
-.reseñas ul{
+.reseñas ul {
   display: flex;
   list-style: none;
   margin: auto;
-  padding: auto;
-}
+  padding: auto; }
 
-.reseñas ul li{
-  margin: 20px;
-}
+.reseñas ul li {
+  margin: 20px; }
 
-#grupoReseñas{
-
-}
-
-.footer{
+.footer {
   display: flex;
-  flex-flow: row;
-}
+  flex-flow: row; }
 
-.footer li{
+.footer li {
   display: flex;
-  flex-flow:column;
-}
+  flex-flow: column; }
 
-.ftr{
+.ftr {
   display: flex;
   flex-flow: column;
   margin: 20px;
   font-size: large;
-  width: 500px;
-}
+  width: 500px; }
 
-.cr{
+.cr {
   display: flex;
   margin: 20px;
   padding-top: 100px;
   font-size: large;
-  padding-left: 200px;
-}
+  padding-left: 200px; }
 
-.Redes{
+.Redes {
   display: flex;
   flex-flow: column;
   margin: 20px;
-  padding-left: 600px;
-}
+  padding-left: 600px; }
 
-.buscador input{
+.buscador input {
   border-radius: 10px;
   width: 500px;
   height: 40px;
-	color: inherit;
-	border: none;
-	cursor: pointer;
-	outline: inherit;
-}
+  color: inherit;
+  border: none;
+  cursor: pointer;
+  outline: inherit; }
 
-.buscador button{
+.buscador button {
   height: 40px;
   width: 40px;
-	background: none;
-	color: inherit;
-	border: none;
-	cursor: pointer;
-	outline: inherit;
-}
+  background: none;
+  color: inherit;
+  border: none;
+  cursor: pointer;
+  outline: inherit; }
 
-.footer{
+.footer {
   padding-top: 100px;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(2px);
-  -webkit-backdrop-filter: blur(2px);
-}
+  -webkit-backdrop-filter: blur(2px); }
 
-.cajaForm{
+#cajaForm {
   display: flex;
   justify-content: center;
   width: 100%;
   height: 100%;
-  margin-top: 100px;
-  cursor: pointer;
-}
+  cursor: pointer; }
 
-
-.formulariodos{
+.formulariodos {
   width: 400px;
   height: 650px;
   background: rgba(0, 0, 0, 0.6);
   border-radius: 30px;
   -webkit-backdrop-filter: blur(2px);
-backdrop-filter: blur(2px);    
-}
+  backdrop-filter: blur(2px);
+  margin: 20px; }
 
-.formu{
+.formu {
   padding: 20px;
-  margin: 20px;
-}
+  margin: 20px; }
 
-label{
+label {
+  color: white; }
+
+.reg {
+  padding-top: 10px; }
+
+.fpssw {
+  padding-top: 5px; }
+
+.register {
+  margin-top: 10px; }
+
+.mb-3 {
+  padding-top: 10px; }
+
+.textoCuenta {
   color: white;
-}
+  margin-right: 15px; }
 
-.reg{
-  padding-top: 10px;
-}
-
-.fpssw{
-  padding-top: 5px;
-}
-
-
-/* REGISTRO */
-.register{
-  margin-top:10px;
-}
-
-.mb-3{
-  padding-top: 10px;
-}
-
-.tituloForm{
-
-}
-
-.textoCuenta{
-  color: white;
-  margin-right: 15px;
-}
-
-#emailHelp{
+#emailHelp {
   display: flex;
-  flex-flow: row;
-  
-}
+  flex-flow: row; }
+
+.catTitulo {
+  padding-top: 200px;
+  padding-left: 50px; }
+
+.container {
+  width: 100%;
+  height: 430px;
+  display: flex;
+  margin: 50px; }
+
+.container .card {
+  width: 330px;
+  height: 430px;
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  margin: 10px;
+  text-align: center;
+  transition: all 0.25s;
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(1px); }
+
+.container .card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 12px 16px rgba(0, 0, 0, 0.5); }
+
+.container .card img {
+  width: 330px;
+  height: 220px;
+  object-fit: cover; }
+
+.container .card h4 {
+  font-weight: 600; }
+
+.container .card p {
+  padding: 0 1rem;
+  font-size: 16px;
+  font-weight: 300; }
+
+.container .card a {
+  font-weight: 500;
+  text-decoration: none;
+  color: #3498db; }
+
+.menu {
+  display: flex; }
+
+.reseñasIndex {
+  display: flex;
+  flex-flow: column;
+  padding-left: 20px;
+  padding-top: 20px;
+  margin-bottom: 80px;
+  margin-top: 180px; }
+
+.formulario {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  width: 400px;
+  padding: 20px;
+  margin: 30px; }
